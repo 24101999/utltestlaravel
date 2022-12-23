@@ -55,8 +55,6 @@ class LoginController extends Controller
 
         $get = DB::table('user')->get();
 
-        \print_r($_SESSION);
-
         foreach ($get as $key => $val) {
             $nome[] = $val->nome;
             $email[] = $val->email;
